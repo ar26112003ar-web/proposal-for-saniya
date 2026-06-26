@@ -296,9 +296,11 @@ left:170px;
 }
 
 .heart{
-    position:absolute;
+    position:fixed;
     bottom:-40px;
     animation:floatHeart linear forwards;
+    pointer-events:none;
+    z-index:9999;
 }
 
 @keyframes floatHeart{
