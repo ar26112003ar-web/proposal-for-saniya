@@ -35,69 +35,44 @@ proposal.classList.remove("hidden");
 
 },1000);
 
-
-
-const texts=[
-
+const texts = [
 "Are you sure? 🥺",
-
-"Think once again ❤️",
-
-"My heart is getting nervous 💓",
-
-"You clicked the wrong button 😂",
-
-"I know you don't mean No 😌",
-
-"Please give me one chance 🌹",
-
-"Don't break my heart 💔",
-
-"You look even cuter trying 😍",
-
-"Still saying No? 😅",
-
-"I'll keep asking ❤️",
-
-"You can't escape love 😜",
-
-"My heart already chose you 💖",
-
-"Almost there... 😊",
-
-"One last chance 🥹",
-
-"Your smile deserves a Yes ❤️"
-
+"Please don't say no... 💖",
+"My heart is waiting for your YES ❤️",
+"You are too special for me ✨",
+"Please think once more 🌹",
+"I'll never stop trying 💕",
+"You make my world beautiful 💝",
+"Almost there... 🥹",
+"One last chance 😍",
+"I knew you'd choose YES ❤️"
 ];
 
-let tries=0;
+let tries = 0;
 
 function moveButton(){
 
-tries++;
+    tries++;
 
-message.innerHTML=texts[Math.min(tries-1,texts.length-1)];
+    message.innerHTML = texts[Math.min(tries - 1, texts.length - 1)];
 
-const x=Math.random()*(window.innerWidth-150);
+    const x = Math.random() * (window.innerWidth - 170);
+    const y = Math.random() * (window.innerHeight - 90);
 
-const y=Math.random()*(window.innerHeight-80);
+    noBtn.style.position = "fixed";
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
 
-noBtn.style.position="fixed";
-noBtn.style.left=x+"px";
-noBtn.style.top=y+"px";
-    if(tries>=9){
+    if (tries >= texts.length){
 
-noBtn.innerHTML="YES ❤️";
+        message.innerHTML = "I knew your answer ❤️🥹";
 
-noBtn.style.background="#ff2d55";
-noBtn.style.color="white";
+        noBtn.style.display = "none";
 
-noBtn.onclick=acceptLove;
-
-return;
-
-}
+        yesBtn.style.transform = "scale(1.2)";
+        yesBtn.innerHTML = "YES 💖";
+        return;
+    }
 
 }
 
