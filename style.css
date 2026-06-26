@@ -231,21 +231,23 @@ bottom:-50px;
 
 font-size:24px;
 
-animation:float 8s linear forwards;
+animation: floatHeart 8s linear forwards;
 
 opacity:.8;
 
 }
 
-@keyframes float{
+@keyframes floatHeart{
 
-to{
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
 
-transform:translateY(-120vh) rotate(360deg);
-
-opacity:0;
-
-}
+    to{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
 
 }
 
