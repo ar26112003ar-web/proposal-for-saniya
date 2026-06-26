@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>For Saniya ❤️</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
+<!-- Floating Hearts -->
+<div id="hearts"></div>
+
+<!-- Intro Screen -->
+
+<section id="intro">
+
+<h2>Hi Saniya ✨</h2>
+
+<h1>I Want To Ask You Something...</h1>
+
+<p>
+Please don't close this page ❤️
+</p>
+
+<div id="countdown">3</div>
+
+</section>
+
+<!-- Proposal Screen -->
+
+<section id="proposal" class="hidden">
 
 <div class="card">
 
@@ -17,21 +48,82 @@
 
 <h2>Saniya ✨</h2>
 
-<p>
-Every moment with you feels special.<br>
-Will you make me the happiest person by saying YES? ❤️
+<p id="mainText">
+
+Since the day we met,
+
+you've made ordinary moments feel special.
+
+You bring smiles without trying,
+
+peace without saying much,
+
+and happiness without even knowing it.
+
+Today I want to ask something
+
+straight from my heart...
+
 </p>
 
 <div class="buttons">
-<button id="yesBtn">Yes ❤️</button>
-<button id="noBtn">No 😅</button>
+
+<button id="yesBtn">
+YES ❤️
+</button>
+
+<button id="noBtn">
+NO 🙈
+</button>
+
 </div>
 
 <p id="message"></p>
 
 </div>
 
+</section>
+
+<!-- Final Screen -->
+
+<section id="final" class="hidden">
+
+<div class="finalCard">
+
+<h1>❤️ Thank You ❤️</h1>
+
+<h2>Saniya ✨</h2>
+
+<img src="hamdu.jpg" id="myPhoto">
+
+<p>
+
+You just made me
+
+the happiest person alive.
+
+I promise to always respect you,
+
+care for you,
+
+and cherish every moment
+
+we spend together.
+
+❤️
+
+</p>
+
+<h3>Forever Yours,</h3>
+
+<h2>Hamdu ❤️</h2>
+
+</div>
+
+</section>
+
 <script src="script.js"></script>
 
 </body>
+
 </html>
