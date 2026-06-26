@@ -181,6 +181,12 @@ min-height:40px;
     box-shadow: 0 0 25px rgba(255,255,255,0.8);
 }
 
+.finalCard{
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+}
 .finalCard h1{
 
 font-size:42px;
