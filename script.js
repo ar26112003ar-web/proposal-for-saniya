@@ -111,7 +111,9 @@ heart.innerHTML=["❤️","💖","💕","💗","🌹","✨"][Math.floor(Math.ran
 heart.style.left=Math.random()*100+"vw";
 
 heart.style.fontSize=(20+Math.random()*30)+"px";
-
+    
+heart.style.animation = "floatHeart " + (4 + Math.random()*4) + "s linear forwards";
+    
 document.getElementById("hearts").appendChild(heart);
 
 setTimeout(()=>{
