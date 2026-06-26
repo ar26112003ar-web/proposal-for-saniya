@@ -11,7 +11,7 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-background:linear-gradient(-45deg,#ff758c,#ff7eb3,#ffd86f,#ff9a9e,#ff6a88);
+background: linear-gradient(135deg, #a18cd1, #fbc2eb);
 background-size:500% 500%;
 animation:bg 12s ease infinite;
 color:white;
