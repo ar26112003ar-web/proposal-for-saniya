@@ -54,7 +54,7 @@ function moveButton(){
 
     tries++;
 
-    message.innerHTML = texts[Math.min(tries - 1, texts.length - 1)];
+    noBtn.innerHTML = texts[Math.min(tries - 1, texts.length - 1)];
 
     const x = Math.random() * (window.innerWidth - 170);
     const y = Math.random() * (window.innerHeight - 90);
@@ -65,15 +65,13 @@ function moveButton(){
 
     if (tries >= texts.length){
 
-        message.innerHTML = "I knew your answer ❤️🥹";
-
-        noBtn.style.display = "none";
-
-        yesBtn.style.transform = "scale(1.2)";
-        yesBtn.innerHTML = "YES 💖";
-        return;
-    }
-
+    noBtn.innerHTML = "YES 💖";
+    noBtn.style.background = "#ff2d55";
+    noBtn.style.color = "white";
+    noBtn.onclick = acceptLove;
+noBtn.removeEventListener("click", moveButton);
+    return;
+}
 }
 
 noBtn.addEventListener("click",moveButton);
